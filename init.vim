@@ -54,3 +54,9 @@ let g:ackprg = 'ag --vimgrep'
 
 autocmd BufEnter * lcd %:p:h
 
+let g:kite_supported_languages = ['javascript', 'java']
+let g:kite_tab_complete=1
+
+set statusline=%<%f\ %h%m%r%{kite#statusline()}%=%-14.(%l,%c%V%)\ %P
+set laststatus=2  " always display the status line
+
